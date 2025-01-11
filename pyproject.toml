@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "tltr"
 version = "0.1.0"
-description = "A simple Python CLI application"
+description = "A simple CLI application to pick some random things."
 readme = "README.md"
 license = {text = "MIT"}
 authors = [{name = "zorlack"}]
@@ -16,6 +16,9 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent"
 ]
+
+[project.scripts]
+tltr = "tltr.cli:tltr"
 
 [tool.setuptools.packages]
 # Explicitly include only the `tltr` package
